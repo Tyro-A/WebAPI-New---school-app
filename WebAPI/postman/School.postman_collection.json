@@ -1,0 +1,351 @@
+{
+  "info": {
+    "_postman_id": "09f2e380-741f-46f2-9f03-dd174884cb97",
+    "name": "School",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "View Courses",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:44312/api/Courses/",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Courses",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Course",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"CourseId\" : \"CE\",\r\n    \"DisplayName\" : \"Civil Engineering\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44312/api/Courses",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Courses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Subjects",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:44312/api/Subjects",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Subjects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Subject",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Name\" : \"Physics\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44312/api/Subjects",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Subjects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Advisers",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:44312/api/Advisers/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Advisers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Advisers",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"FirstName\" : \"Gerald\",\r\n    \"LastName\" : \"Cayabyab\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44312/api/Advisers/",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Advisers",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Organizations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44312/api/Organizations/1/complete-details",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Organizations",
+            "1",
+            "complete-details"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Organization Adviser",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44312/api/Organizations/1/adviser",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Organizations",
+            "1",
+            "adviser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Organization Complete Details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44312/api/Organizations/1/complete-details",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Organizations",
+            "1",
+            "complete-details"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Students in Organization",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44312/api/Organizations/1/students",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Organizations",
+            "1",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Organizations",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Name\" : \"Jupiter\",\r\n    \"About\" : \"Computer\",\r\n    \"SubjectId\" : 1,\r\n    \"AdviserId\" : 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44312/api/Organizations",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "Organizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Students",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44391/api/students",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44391",
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Students",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"FirstName\" : \"Luh\",\r\n    \"LastName\" : \"Luh\",\r\n    \"YearLevel\" : 3,\r\n    \"CourseId\" : \"CE\",\r\n    \"OrganizationId\" : 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44312/api/students",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44312",
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
