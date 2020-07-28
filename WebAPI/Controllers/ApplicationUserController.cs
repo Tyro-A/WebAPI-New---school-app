@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -34,12 +35,14 @@ namespace WebAPI.Controllers
         //POST : /api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
-            model.Role = "Student";
+
             var applicationUser = new ApplicationUser()
             {
                 UserName = model.UserName,
                 Email = model.Email,
-                FullName = model.FullName
+                FullName = model.FullName,
+                Role = model.Role
+                
             };
 
             try
@@ -54,6 +57,8 @@ namespace WebAPI.Controllers
                 throw ex;
             }
         }
+
+
 
         [HttpPost]
         [Route("Login")]
